@@ -66,7 +66,7 @@ namespace EmployeeManagement.Test
 
             // suggested bonus for new employees =
             // (years in service if > 0) * attended courses * 100  
-            decimal suggestedBonus = 1000;
+            decimal suggestedBonus = 200;
 
             // Act 
             var employee = employeeService.CreateInternalEmployee("Sandy", "Dockx");
