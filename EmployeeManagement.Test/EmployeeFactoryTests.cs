@@ -1,5 +1,5 @@
 ﻿using EmployeeManagement.Business;
-using EmployeeManagement.DataAccess.Entities; 
+using EmployeeManagement.DataAccess.Entities;
 using Xunit;
 
 namespace EmployeeManagement.Test
@@ -16,7 +16,7 @@ namespace EmployeeManagement.Test
 
         public void Dispose()
         {
-           // clean up the setup code, if required
+            // clean up the setup code, if required
         }
 
 
@@ -24,7 +24,7 @@ namespace EmployeeManagement.Test
         [Trait("Category", "EmployeeFactory_CreateEmployee_Salary")]
         public void CreateEmployee_ConstructInternalEmployee_SalaryMustBe2500()
         {
-            
+
             var employee = (InternalEmployee)_employeeFactory
                 .CreateEmployee("Kevin", "Dockx");
 
@@ -102,7 +102,6 @@ namespace EmployeeManagement.Test
 
             // Assert
             Assert.IsType<ExternalEmployee>(employee);
-            //Assert.IsAssignableFrom<Employee>(employee);
         }
 
         [Fact]
@@ -111,7 +110,5 @@ namespace EmployeeManagement.Test
             Thread.Sleep(5000);
             Assert.True(true);
         }
-
-      
     }
 }
